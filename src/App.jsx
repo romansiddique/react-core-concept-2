@@ -6,10 +6,10 @@ function App() {
     color: 'red'
   }
   const handleClick = () =>{
-    alert('ok');
+    alert('I am alert');
   }
   function addNumber5(num){
-    alert(num+5)
+    alert(`after adding 5 the value is :  ${num+5}`)
   }
   return (
     <>
