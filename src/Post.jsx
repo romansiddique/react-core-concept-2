@@ -1,4 +1,3 @@
-import './App.css'
 export default function Post({post}){
   const {title , body} = post;
   return(
