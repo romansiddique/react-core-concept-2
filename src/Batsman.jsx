@@ -40,6 +40,10 @@ export default function Batsman(){
           <h2>Sixes : {runsTypeSixesCount}</h2>
         </div>
         <h1>Score : {runs}</h1>
+        {
+          runs >= 50 && <p>You Score is 50</p>
+        }
+
         <button onClick={() => {setSingle(); setSingleCount()}}>Single</button>
         <button onClick={() => {setFour(); setFourCount()}}>Four</button>
         <button onClick={() => {setSix(); setSixCount()}}>Six</button>
