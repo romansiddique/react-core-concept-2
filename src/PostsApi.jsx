@@ -9,7 +9,7 @@ export default function Posts({fetchPosts}){
       <div>
         {
           posts.map(post => 
-            <Post post = {post}></Post>
+            <Post key={post.id} post = {post}></Post>
           )
         }
       </div>
