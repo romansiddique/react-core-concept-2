@@ -1,5 +1,6 @@
 import './App.css'
 import Counter from './Count'
+import Batsman from './Batsman'
 function App() {
   const headingStyle = {
     color: 'red'
@@ -9,7 +10,7 @@ function App() {
     <>
       <h1 style={headingStyle}>React Core Concept Part - 2</h1>
       <Counter></Counter>
-
+      <Batsman></Batsman>
     </>
   )
 }
