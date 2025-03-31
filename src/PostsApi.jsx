@@ -1,5 +1,5 @@
 import { use } from "react"
-
+import Post from './Post'
 export default function Posts({fetchPosts}){
   const posts = use(fetchPosts)
   return(
@@ -9,10 +9,7 @@ export default function Posts({fetchPosts}){
       <div>
         {
           posts.map(post => 
-            <div key={post.id} className="card-under">
-              <h2>Title : {post.title}</h2>
-              <h2>Body : {post.body}</h2>
-            </div>
+            <Post post = {post}></Post>
           )
         }
       </div>
